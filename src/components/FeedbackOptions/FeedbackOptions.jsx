@@ -5,6 +5,11 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     <div>
       {options.map((option, index) => (
         <button
+          style={{
+            color: 'navy',
+
+            marginRight: '5px',
+          }}
           key={index}
           type="button"
           onClick={() => onLeaveFeedback(option)}
